@@ -12,7 +12,7 @@
     		<rdfs:label>Frozen</rdfs:label>
     		<film:year>2013</film:year>
             <film:trailer rdf:resource="https://www.youtube.com/embed/TbQm5doF_Uc"/>
-    		<foaf:homepage rdf:resource="https://www.rottentomatoes.com/m/frozen_2013"/>
+    		<foaf:homepage rdf:resource="https://www.imdb.com/title/tt2294629/"/>
     	</film:movie>
 
     	<film:movie rdf:about="http://dbpedia.org/resource/Toy_Story">
@@ -20,7 +20,7 @@
     		<rdfs:label>Toy Story</rdfs:label>
     		<film:year>1995</film:year>
             <film:trailer rdf:resource="https://www.youtube.com/embed/rNk1Wi8SvNc"/>
-    		<foaf:homepage rdf:resource="https://www.rottentomatoes.com/m/toy_story"/>
+    		<foaf:homepage rdf:resource="https://www.imdb.com/title/tt0114709/"/>
     	</film:movie>
 
         <film:movie rdf:about="http://dbpedia.org/resource/Toy_Story_2">
@@ -28,7 +28,7 @@
             <rdfs:label>Toy Story 2</rdfs:label>
             <film:year>1999</film:year>
             <film:trailer rdf:resource="https://www.youtube.com/embed/xNWSGRD5CzU"/>
-            <foaf:homepage rdf:resource="https://www.rottentomatoes.com/m/toy_story_2"/>
+            <foaf:homepage rdf:resource="https://www.imdb.com/title/tt0120363/"/>
         </film:movie>
 
         <film:movie rdf:about="http://dbpedia.org/resource/Toy_Story_3">
@@ -36,7 +36,7 @@
             <rdfs:label>Toy Story 3</rdfs:label>
             <film:year>2010</film:year>
             <film:trailer rdf:resource="https://www.youtube.com/embed/JcpWXaA2qeg"/>
-            <foaf:homepage rdf:resource="https://www.rottentomatoes.com/m/toy_story_3"/>
+            <foaf:homepage rdf:resource="https://www.imdb.com/title/tt0435761/"/>
         </film:movie>
 
         <film:movie rdf:about="http://dbpedia.org/resource/Toy_Story_4">
@@ -44,7 +44,7 @@
             <rdfs:label>Toy Story 4</rdfs:label>
             <film:year>2019</film:year>
             <film:trailer rdf:resource="https://www.youtube.com/embed/wmiIUN-7qhE"/>
-            <foaf:homepage rdf:resource="https://www.rottentomatoes.com/m/toy_story_4"/>
+            <foaf:homepage rdf:resource="https://www.imdb.com/title/tt1979376/"/>
         </film:movie>
 
         <film:movie rdf:about="http://dbpedia.org/resource/Big_Hero_6_(film)">
@@ -52,7 +52,7 @@
             <rdfs:label>Big Hero 6</rdfs:label>
             <film:year>2014</film:year>
             <film:trailer rdf:resource="https://www.youtube.com/embed/z3biFxZIJOQ"/>
-            <foaf:homepage rdf:resource="https://www.rottentomatoes.com/m/big_hero_6"/>
+            <foaf:homepage rdf:resource="https://www.imdb.com/title/tt2245084/"/>
         </film:movie>
 
         <film:movie rdf:about="http://dbpedia.org/resource/Cars_(film)">
@@ -60,7 +60,7 @@
             <rdfs:label>Cars</rdfs:label>
             <film:year>2006</film:year>
             <film:trailer rdf:resource="https://www.youtube.com/embed/SbXIj2T-_uk"/>
-            <foaf:homepage rdf:resource="https://www.rottentomatoes.com/m/cars"/>
+            <foaf:homepage rdf:resource="https://www.imdb.com/title/tt0317219/"/>
         </film:movie>
 
         <film:movie rdf:about="http://dbpedia.org/resource/Cars_2">
@@ -68,7 +68,7 @@
             <rdfs:label>Cars 2</rdfs:label>
             <film:year>2011</film:year>
             <film:trailer rdf:resource="https://www.youtube.com/embed/lg5hj2c5Nkk"/>
-            <foaf:homepage rdf:resource="https://www.rottentomatoes.com/m/cars_2"/>
+            <foaf:homepage rdf:resource="https://www.imdb.com/title/tt1216475/"/>
         </film:movie>
 
         <film:movie rdf:about="http://dbpedia.org/resource/Coco_(2017_film)">
@@ -76,7 +76,7 @@
             <rdfs:label>Coco</rdfs:label>
             <film:year>2017</film:year>
             <film:trailer rdf:resource="https://www.youtube.com/embed/Rvr68u6k5sI"/>
-            <foaf:homepage rdf:resource="https://www.rottentomatoes.com/m/coco_2017"/>
+            <foaf:homepage rdf:resource="https://www.imdb.com/title/tt2380307/"/>
         </film:movie>
 
         <film:movie rdf:about="http://dbpedia.org/resource/Finding_Nemo">
@@ -84,7 +84,7 @@
             <rdfs:label>Finding Nemo</rdfs:label>
             <film:year>2003</film:year>
             <film:trailer rdf:resource="https://www.youtube.com/embed/9oQ628Seb9w"/>
-            <foaf:homepage rdf:resource="https://www.rottentomatoes.com/m/finding_nemo"/>
+            <foaf:homepage rdf:resource="https://www.imdb.com/title/tt0266543/"/>
         </film:movie>
 
         <film:movie rdf:about="http://dbpedia.org/resource/Finding_Dory">
@@ -92,7 +92,7 @@
             <rdfs:label>Finding Dory</rdfs:label>
             <film:year>2016</film:year>
             <film:trailer rdf:resource="https://www.youtube.com/embed/0tkLUap7oGQ"/>
-            <foaf:homepage rdf:resource="https://www.rottentomatoes.com/m/finding_dory"/>
+            <foaf:homepage rdf:resource="https://www.imdb.com/title/tt2277860/"/>
         </film:movie>
 
 </rdf:RDF>
