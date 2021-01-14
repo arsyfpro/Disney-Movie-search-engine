@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:film="http://example.org/schema/film/">
+
+    	<film:movie rdf:about="http://dbpedia.org/resource/Frozen_(2013_film)">
+    		<rdfs:label>Frozen</rdfs:label>
+    		<film:year>2013</film:year>
+    		<foaf:homepage rdf:resource="https://www.rottentomatoes.com/m/frozen_2013"/>
+    	</film:movie>
+
+    	<film:movie rdf:about="http://dbpedia.org/resource/Toy_Story">
+    		<rdfs:label>Toy Story</rdfs:label>
+    		<film:year>1995</film:year>
+    		<foaf:homepage rdf:resource="https://www.rottentomatoes.com/m/toy_story"/>
+    	</film:movie>
+
+
+</rdf:RDF>
