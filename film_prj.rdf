@@ -8,16 +8,91 @@
          xmlns:film="http://example.org/schema/film/">
 
     	<film:movie rdf:about="http://dbpedia.org/resource/Frozen_(2013_film)">
+            <film:nomor>fn1</film:nomor>
     		<rdfs:label>Frozen</rdfs:label>
     		<film:year>2013</film:year>
+            <film:trailer rdf:resource="https://www.youtube.com/embed/TbQm5doF_Uc"/>
     		<foaf:homepage rdf:resource="https://www.rottentomatoes.com/m/frozen_2013"/>
     	</film:movie>
 
     	<film:movie rdf:about="http://dbpedia.org/resource/Toy_Story">
+            <film:nomor>fn2</film:nomor>
     		<rdfs:label>Toy Story</rdfs:label>
     		<film:year>1995</film:year>
+            <film:trailer rdf:resource="https://www.youtube.com/embed/rNk1Wi8SvNc"/>
     		<foaf:homepage rdf:resource="https://www.rottentomatoes.com/m/toy_story"/>
     	</film:movie>
 
+        <film:movie rdf:about="http://dbpedia.org/resource/Toy_Story_2">
+            <film:nomor>fn3</film:nomor>
+            <rdfs:label>Toy Story 2</rdfs:label>
+            <film:year>1999</film:year>
+            <film:trailer rdf:resource="https://www.youtube.com/embed/xNWSGRD5CzU"/>
+            <foaf:homepage rdf:resource="https://www.rottentomatoes.com/m/toy_story_2"/>
+        </film:movie>
+
+        <film:movie rdf:about="http://dbpedia.org/resource/Toy_Story_3">
+            <film:nomor>fn4</film:nomor>
+            <rdfs:label>Toy Story 3</rdfs:label>
+            <film:year>2010</film:year>
+            <film:trailer rdf:resource="https://www.youtube.com/embed/JcpWXaA2qeg"/>
+            <foaf:homepage rdf:resource="https://www.rottentomatoes.com/m/toy_story_3"/>
+        </film:movie>
+
+        <film:movie rdf:about="http://dbpedia.org/resource/Toy_Story_4">
+            <film:nomor>fn5</film:nomor>
+            <rdfs:label>Toy Story 4</rdfs:label>
+            <film:year>2019</film:year>
+            <film:trailer rdf:resource="https://www.youtube.com/embed/wmiIUN-7qhE"/>
+            <foaf:homepage rdf:resource="https://www.rottentomatoes.com/m/toy_story_4"/>
+        </film:movie>
+
+        <film:movie rdf:about="http://dbpedia.org/resource/Big_Hero_6_(film)">
+            <film:nomor>fn6</film:nomor>
+            <rdfs:label>Big Hero 6</rdfs:label>
+            <film:year>2014</film:year>
+            <film:trailer rdf:resource="https://www.youtube.com/embed/z3biFxZIJOQ"/>
+            <foaf:homepage rdf:resource="https://www.rottentomatoes.com/m/big_hero_6"/>
+        </film:movie>
+
+        <film:movie rdf:about="http://dbpedia.org/resource/Cars_(film)">
+            <film:nomor>fn7</film:nomor>
+            <rdfs:label>Cars</rdfs:label>
+            <film:year>2006</film:year>
+            <film:trailer rdf:resource="https://www.youtube.com/embed/SbXIj2T-_uk"/>
+            <foaf:homepage rdf:resource="https://www.rottentomatoes.com/m/cars"/>
+        </film:movie>
+
+        <film:movie rdf:about="http://dbpedia.org/resource/Cars_2">
+            <film:nomor>fn8</film:nomor>
+            <rdfs:label>Cars 2</rdfs:label>
+            <film:year>2011</film:year>
+            <film:trailer rdf:resource="https://www.youtube.com/embed/lg5hj2c5Nkk"/>
+            <foaf:homepage rdf:resource="https://www.rottentomatoes.com/m/cars_2"/>
+        </film:movie>
+
+        <film:movie rdf:about="http://dbpedia.org/resource/Coco_(2017_film)">
+            <film:nomor>fn9</film:nomor>
+            <rdfs:label>Coco</rdfs:label>
+            <film:year>2017</film:year>
+            <film:trailer rdf:resource="https://www.youtube.com/embed/Rvr68u6k5sI"/>
+            <foaf:homepage rdf:resource="https://www.rottentomatoes.com/m/coco_2017"/>
+        </film:movie>
+
+        <film:movie rdf:about="http://dbpedia.org/resource/Finding_Nemo">
+            <film:nomor>fn10</film:nomor>
+            <rdfs:label>Finding Nemo</rdfs:label>
+            <film:year>2003</film:year>
+            <film:trailer rdf:resource="https://www.youtube.com/embed/9oQ628Seb9w"/>
+            <foaf:homepage rdf:resource="https://www.rottentomatoes.com/m/finding_nemo"/>
+        </film:movie>
+
+        <film:movie rdf:about="http://dbpedia.org/resource/Finding_Dory">
+            <film:nomor>fn11</film:nomor>
+            <rdfs:label>Finding Dory</rdfs:label>
+            <film:year>2016</film:year>
+            <film:trailer rdf:resource="https://www.youtube.com/embed/0tkLUap7oGQ"/>
+            <foaf:homepage rdf:resource="https://www.rottentomatoes.com/m/finding_dory"/>
+        </film:movie>
 
 </rdf:RDF>
