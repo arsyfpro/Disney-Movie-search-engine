@@ -4,7 +4,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-  <a class="navbar-brand" href="#">Disney's Animation</a>
+  <a class="navbar-brand" href="index.php">Disney's Animation</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -13,7 +13,7 @@
 
     <ul class="navbar-nav">
     <li class="nav-item">
-    <a href="" class="nav-link navbar-link-2 waves-effect">
+    <a href="index.php" class="nav-link navbar-link-2 waves-effect">
     <img src="icon/homepage.png" height="30"> 
     </a>
     </li>
@@ -32,7 +32,7 @@
         <div class="modal-header modal-xl">
           <form action="search.php" method="get" class="form-inline form-xl">
             <input name="keyword" class="form-control" type="text" style="width: 376px;" placeholder="Search" aria-label="Search">
-            <button class="btn" type="submit"><img src="icon/search.png" height="30"></button>
+            <button class="btn btn-dark" type="submit"><img src="icon/search.png" height="30"></button>
           </form>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>

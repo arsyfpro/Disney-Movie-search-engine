@@ -1,6 +1,8 @@
 <?php
 	require_once realpath(__DIR__)."/vendor/autoload.php";
     require_once __DIR__."/html_tag_helpers.php";
+
+    $key = $_GET['keyword'];
 ?>
 <!DOCTYPE html>
 <html>
@@ -13,7 +15,8 @@
 <?php include "navbar.php";?>
 
  <div class="container mt-5">
-	<h2 class="text-center">Disney's Animation Movie</h2>
+	<h4 class="text-center">Hasil pencarian untuk '<?= $key ?>'</h4>
+	<br><br>
 	<div class="row justify-content-center">
 
 	  <div class="row">
@@ -33,22 +36,38 @@
 		    $sparql_jena = new \EasyRdf\Sparql\Client($jena_endpoint);
 
 		    $sparql_query = '
-		    	SELECT ?judul ?tahun ?link ?f ?no
-				WHERE {
-				  ?f a film:movie;
-				     rdfs:label ?judul;
-					 film:year ?tahun;
-					 film:nomor ?no;
-					 foaf:homepage ?link.
+		    	SELECT DISTINCT ?judul ?tahun ?link ?f ?trlr ?no
+					WHERE {
+					{?f a film:movie;
+						rdfs:label ?judul;
+						film:year ?tahun;
+						film:nomor ?no;
+				     	film:trailer ?trlr;
+						foaf:homepage ?link.
+				    FILTER REGEX (?judul, "'.$key.'", "i"). 
+				  } UNION {
+					?f a film:movie;
+						rdfs:label ?judul;
+						film:year ?tahun;
+						film:nomor ?no;
+				     	film:trailer ?trlr;
+						foaf:homepage ?link.
+				    FILTER REGEX (?tahun, "'.$key.'", "i"). 
+				  }
 				}
-				ORDER BY rand() LIMIT 8';
+				ORDER BY ASC (?judul)';
 
 			$result = $sparql_jena->query($sparql_query);
 
+			if($result->numRows() < 1){
+				echo "<p>Sayang sekali hasil tidak ditemukan</p>";
+			}
+
+			else{
 			foreach ($result as $row) {
 
-			$imdb_link = \EasyRdf\Graph::newAndLoad($row->link);
-			$src_poster = $imdb_link->image;
+			$link_imdb = \EasyRdf\Graph::newAndLoad($row->link);
+			$src_poster = $link_imdb->image;
 
 	  	?>
 		<div class="card movie_card">
@@ -59,7 +78,8 @@
 		   		<br><a href="detail.php?q=<?= $row->no ?>" class="btn btn-sm btn-danger float-right">Details</a><br>
 		  </div>
 		</div>
-		<?php } ?>
+		<?php } 
+			} ?>
 	  </div>	
 
 	</div>
