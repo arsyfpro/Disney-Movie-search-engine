@@ -27,9 +27,6 @@
 	
 <div class="card">
 	<div class="row">
-		<aside class="col-sm-12">
-			<article class="card-body p-5">
-
 			<?php
 				\EasyRdf\RdfNamespace::set('geo', 'http://www.w3.org/2003/01/geo/wgs84_pos#');
 				\EasyRdf\RdfNamespace::set('foaf', 'http://xmlns.com/foaf/0.1/');
@@ -48,7 +45,8 @@
 			      SELECT DISTINCT * WHERE {
 					<'.$resource.'> dbo:abstract ?abstract;
 					                foaf:name ?nama;
-					                dbo:birthPlace ?t_l .
+					                dbo:birthPlace ?t_l;
+					                foaf:isPrimaryTopicOf ?link_wiki .
 					?t_l rdfs:label ?tempat_lahir .
 					OPTIONAL {?t_l geo:lat ?lat;
 					       		   geo:long ?long.
@@ -60,7 +58,26 @@
 
 			    foreach ($result as $row) {
 
+			    	$wiki_link = \EasyRdf\Graph::newAndLoad($row->link_wiki);
+			    	$src_img = $wiki_link->image;
+
+			    	$class_aside = 'col-sm-12';
+
+			    	if (!empty($src_img)){
+
+			    		$class_aside = 'col-sm-9';
 			?>
+		<aside class="col-sm-3">
+			<article>
+			  <div>
+				<img style="width: 300px; padding-top: 60px; padding-left: 30px" src="<?= $src_img ?>">
+			  </div>
+			</article>
+		</aside>
+		<?php } ?>
+		<aside class="<?= $class_aside ?>">
+			<article class="card-body p-5">
+
 				<h3 class="title mb-3"><?= $row->nama ?></h3>
 
 				<dl class="item-property">
